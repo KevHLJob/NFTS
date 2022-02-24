@@ -345,7 +345,7 @@
     flex-wrap: wrap;
 }
 
-.images-card{
+.images-card:nth-child(1){
     margin: 1rem;
     height: 425px;
     width: 400px;
@@ -474,4 +474,28 @@ opacity: 0.2;
 .ing {
     font-style: oblique;
     color: deepskyblue;
+}
+
+@media only screen and (max-width: 400px){
+
+.navbar{
+    width: 28rem;
+}
+.main-container{
+    width: 28rem;
+}
+
+.images{
+    width: 28rem;
+}
+#main-img{
+    height: 255px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.footer-container{
+    width: 28rem;
+}
+
 }
