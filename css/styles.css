@@ -60,7 +60,7 @@
     padding: 0 1rem;
 }
 
-navbar-btn {
+.navbar-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,22 +119,21 @@ navbar-btn {
         margin: 0;
         width: 100%;
         position: absolute;
-        /* top: -1000px; */
+        top: -1000px;
         opacity: 1;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 60vh;
         z-index: -1;
-        background: red;
     }
 
-    .navbar-menu:active {
+    .navbar-menu.active {
         background-color: #005aa7;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
+        height: 60vh;
+        font-size: 1.3rem;
     }
 
     .navbar-toggle .bar{
@@ -166,6 +165,7 @@ navbar-btn {
         width: 80%;
         height: 80px;
         margin: 0;
+        
     }
 
     .navbar-toggle .bar{
@@ -173,5 +173,90 @@ navbar-btn {
         cursor: pointer;
     }
 
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+}
+
+/* Hero section */
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #005aa7;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.main-content{
+    width: 100%;
+}
+
+.main-content h1{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.text-highlights{
+    color: deepskyblue;
+}
+.main-content p{
+    font-size: 2.5rem;
+    margin-top: 8px;
+    font-weight: 100;
+    color: floralwhite;
+}
+
+.main-btn{
+    font-size: 1rem;
+    padding: 14px 32px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main-btn a{
+    position: relative;
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
 
 }
+
+.main-btn:after{
+    position: absolute;
+    content: '';
+    
+
+}
+
+#main-img{
+    height: 505px;
+    width: 590px;
+    border-radius: 20px;
+}
+
