@@ -476,7 +476,7 @@ opacity: 0.2;
     color: deepskyblue;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 320px){
 
 .navbar{
     width: 28rem;
@@ -487,9 +487,10 @@ opacity: 0.2;
 
 .images{
     width: 28rem;
+    top:20px ;
 }
 #main-img{
-    height: 255px;
+    height: 285px;
     width: 300px;
     border-radius: 20px;
 }
